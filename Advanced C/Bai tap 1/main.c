@@ -65,10 +65,10 @@ struct typeArr *nhapThongTin(){
     scanf("%d", &a.size);
     //Cap phat dong cho con tro arr
     a.arr = (int*)malloc(a.size*sizeof(int));
-    // a.arr + i = &a.arr[i]: Tinh chat trong mang
     for (int i = 0; i < a.size; i++)
     {
         printf("Nhap phan tu arr[%d]: ",i);
+        // a.arr + i = &a.arr[i]: Tinh chat trong mang
         // scanf("%d",&a.arr[i]);
         scanf("%d",(a.arr+i));
     }    
@@ -84,7 +84,7 @@ int main(int argc, char const *argv[])
     printf("Mang da nhap la: ");
     for (int i = 0; i < test->size; i++)
     {
-        // test->arr[i]) = *(test->arr + i));
+        // test->arr[i]) = *(test->arr + i)): Tinh chat trong mang
         printf("%d  ",*(test->arr + i));
     }
     
@@ -114,7 +114,5 @@ int main(int argc, char const *argv[])
         timSoLonNhat(test);
         printf("So lon nhat trong mang la: %d\n",timSoLonNhat(test));
     }
-
-
     return 0;
 }
