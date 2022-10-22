@@ -16,13 +16,6 @@ typedef struct typeBox{
     int size;
 } typeBox;
 
-int dieuKien(char name[7]){
-    if (strcmp((char *)"VO_DO",name) != 0 && strcmp((char *)"VO_VANG",name) != 0 && strcmp((char *)"VO_XANH",name) != 0){
-        printf("Ban da nhap sai !! Nhap lai\n");
-        return 1;
-    }else return 0;
-}
-
 // ->: ra gia tri
 void nhapThongTin(typeBox *a){
     char name[10];
