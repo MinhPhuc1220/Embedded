@@ -8,7 +8,7 @@ Chia một mảng các số từ 0 tới 9 thành hai mảng chẵn và mảng l
 int n = 10;
 void nhapMang(int *ptr){
     for (int i = 0; i < n; i++){
-        ptr[i] = i;
+        *(ptr+i) = i;
     }
 }
 
@@ -50,12 +50,10 @@ int main(int argc, char const *argv[])
     //In ra mang ban dau
     nhapMang(arr);
     hienThiMang(arr);
-
-    
-
     //In ra mang chan
     mangEven(arr);
     //In ra mang le
     mangOdd(arr);
+    free(arr);
     return 0;
 }
