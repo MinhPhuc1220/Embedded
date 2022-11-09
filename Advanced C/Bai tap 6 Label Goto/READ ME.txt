@@ -1,0 +1,5 @@
+Dùng vi điều khiển bất kì với yêu cầu sau
+2 nút nhấn:
+Nhấn nút 1: 7 đèn LED chớp tắt 5 lần
+Nhấn nút 2: 7 đèn LED sáng dồn 3 lần
+Yêu cầu: nhấn nút đáp ứng ngay lập tức, không được sử dụng ngắt ngoài
